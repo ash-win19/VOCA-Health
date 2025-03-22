@@ -82,8 +82,8 @@ app = FastAPI(
 )
 
 # Load Model
-model_path = "app/models/voice_disorder_model.json"
-mean_std_path = "app/models/mean_std_values_c10.npy"
+model_path = "models/voice_disorder_model.json"
+mean_std_path = "models/mean_std_values_c10.npy"
 predictor = VoiceDisorderPredictor(model_path, mean_std_path)
 
 
